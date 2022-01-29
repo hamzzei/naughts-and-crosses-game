@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2em;
+    font-family: sans-serif;
+    color: #e4e4e4;
+    background: #333;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.boardEl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    color: #404040;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.2em;
+}
+
+.tile {
+    margin: 0.2em;
+    width: min(20vw, 150px);
+    height: min(20vw, 150px);
+    font-size: 3rem;
+    font-weight: 700;
+    background: radial-gradient(#fff, #bbb);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.tile:hover {
+    background: #888;
+}
+
+.tileSpin {
+    transition: transform 1s;
+    transform: rotateX(360deg);
+}
+
+.ox {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.lightblue,
+.o {
+    color: lightskyblue;
+}
+
+.lightpink,
+.x {
+    color: lightpink;
+}
+
+#messageEl {
+    margin-bottom: 2em;
+}
+
+#restartBtn {
+    margin: 2em;
+    padding: 0.5em 1.5em;
+    font-size: 1.3rem;
+
+    background: linear-gradient(90deg, rgb(209, 68, 89), rgb(117, 112, 180));
+    color: inherit;
+    font-weight: bold;
+    transition: transform 250ms;
+}
+
+#restartBtn:hover,
+#restartBtn:focus {
+    transform: scale(1.05);
+}
+
+.textGrow {
+    transition: font-size 1s;
+    font-size: 2rem;
+}
